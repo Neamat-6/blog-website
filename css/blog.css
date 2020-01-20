@@ -1,0 +1,127 @@
+@import url("footer.css");
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* start header*/
+header {
+    color:#aab;
+    text-transform: capitalize;
+    overflow:hidden;
+    position:relative;
+}
+
+.brand {
+    float:left;
+    margin:20px 40px;
+    font-size: 40px;
+    color:#ae4dce;
+
+}
+
+nav > ul {
+    list-style: none;
+    display:flex;
+    float:right;
+   
+}
+ul > li{
+    margin:20px 40px;
+    font-size:20px;
+    cursor: pointer;
+    transition:0.3s;
+}
+ul > li:hover {
+    color:#bf6bdb
+}
+@media (max-width:576px) {
+    nav > ul {
+        flex-direction:column;
+        align-items: center;
+
+    }
+}
+
+article {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:30px;
+    padding:0 40px;
+    
+}
+h1 {
+    text-transform: capitalize;
+    color:#635f5f;  
+}
+
+section {
+    grid-column: 1/2;
+}
+
+aside {
+    grid-column: 2/-1;
+}
+
+.img-fluid {
+    max-width:100%;
+    height:auto;
+}
+section .text {
+    font-weight: bold;
+    color:#86868a;
+    line-height:1.5;
+    margin-bottom:30px;
+}
+section h2 {
+    text-transform: capitalize;
+    color:#635f5f; 
+}
+
+aside h3 {
+    margin:0;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+    color:#635f5f
+    
+}
+
+.post {
+    display:flex;
+    margin-bottom:20px;
+    cursor: pointer;
+}
+
+.post > .image {
+   width:46%;
+   margin-right:4%;
+}
+
+.post > .text {
+    width:50%;
+    font-weight: bold;
+    color:#86868a;
+    text-transform: capitalize;
+    overflow:hidden;
+}
+
+@media (max-width:900px){
+    .post .text p {
+        display:none;
+    }
+}
+
+.image img {
+    width:130px;
+    height:130px;
+    border-radius: 50%;
+
+}
+
+
+
